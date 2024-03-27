@@ -1,0 +1,25 @@
+int main() {
+	int scale;
+	int temp;
+	int conversion;
+
+	printf("Please enter the temperature value you would like to convert : ");
+	scanf("%d", &temp);
+    
+	printf("Type 1 if the temperature is in Celsius,type 2 if in Fahrenheit : ");
+	scanf("%d", &scale);
+    
+	switch(scale) {
+   	 
+    	case 1 :
+      	conversion = temp*1.8 + 32;
+      	printf("%d°C is equal to %d°F", temp, conversion);
+      	break;
+     	 
+    	case 2:
+      	conversion = (temp - 32)* 0.556;
+      	printf("%d°F is equal to %d°C", temp,conversion );
+	}
+    
+	return 0;
+}
